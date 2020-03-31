@@ -932,6 +932,7 @@ class Mapper
     public static function getCityCode(string $cityName): int
     {
         $slug = Text::createSlug($cityName);
+        
         if (!array_key_exists($slug, self::$cityMap)) {
             throw new \InvalidArgumentException("$cityName mevcut şehir listesinde bulunamadı");
         }

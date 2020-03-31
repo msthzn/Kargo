@@ -61,7 +61,7 @@ class CreateShipment
     /**
      * @return string
      */
-    public function getErrorCode(): string
+    public function getErrorCode(): ?string
     {
         return $this->errorCode;
     }
@@ -80,7 +80,7 @@ class CreateShipment
     /**
      * @return string
      */
-    public function getErrorDescription(): string
+    public function getErrorDescription(): ?string
     {
         return $this->errorDescription;
     }
