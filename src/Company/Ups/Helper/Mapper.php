@@ -149,6 +149,7 @@ class Mapper
             'haymana'         => 67,
             'kalecik'         => 68,
             'kahramankazan'   => 69,
+            'kazan'   		  => 69,
             'kecioren'        => 4014,
             'kizilcahamam'    => 70,
             'mamak'           => 4017,
