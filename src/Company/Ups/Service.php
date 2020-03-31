@@ -144,7 +144,7 @@ class Service extends ServiceAbstract implements ServiceInterface
             $shipmentType->setPackageType('L');
         }
 
-        if (!$package->getShipmentType() == Package::SHIPMENT_TYPE_PREPAID) {
+        if ($package->getShipmentType() != Package::SHIPMENT_TYPE_PREPAID) {
             $shipmentType->setValueOfGoods($package->getValueOfGoods());
             $shipmentType->setValueOfGoodsCurrency($package->getValueOfGoodsCurrency());
             if ($package->getShipmentType() == Package::SHIPMENT_TYPE_CARD_ON_DELIVERY) {
