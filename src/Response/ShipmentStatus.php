@@ -143,7 +143,7 @@ class ShipmentStatus
     /**
      * @return string
      */
-    public function getErrorCode(): string
+    public function getErrorCode(): ?string
     {
         return $this->errorCode;
     }
@@ -162,7 +162,7 @@ class ShipmentStatus
     /**
      * @return string
      */
-    public function getErrorMessage(): string
+    public function getErrorMessage(): ?string
     {
         return $this->errorMessage;
     }
